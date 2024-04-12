@@ -1,0 +1,232 @@
+<html> 
+<body>
+<head>
+<title>School Survey</title>
+
+<link rel="icon"; href="C:\Users\User\Downloads\emerald.jpg"; type="image/jpg";>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: darkslateblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid darkslateblue;
+}
+
+.btn {
+  background-color: darkslateblue;
+  color: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: block;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+ul {
+list-type: none;
+margin: 0}
+
+header {background-color: teal;
+color: white;
+padding: 10px;
+position: relative;
+width: 100%;
+text-align: center;}
+
+header:hover{background-color: aquamarine; 
+font-family: Arial Black;
+color: black;}
+
+footer {background-color: teal;
+color: white;
+padding: 5px;
+position: fixed;
+width: 100%;
+text-align: center;
+bottom: 0px;}
+
+.divi {background-color: #04AA6D;
+       width: 100%;}
+
+.jade {
+color: olive;
+text-align: center;
+}
+
+.emes {
+color: white;
+font-family: Arial Black;
+text-align: center;
+}
+
+.divi {background-color: skyblue;
+       width: 100%;}
+
+</style>
+</head>
+
+<body background="C:\Users\User\OneDrive\ict.html\ict pt#3\background.jpeg">
+ <header> 
+   <h1>School Survey</h2>
+     <h3>Performance task # 1 in ICT 8 of the 4th Quarter</h3>
+      <h2>8-Emerald</h2>
+</header>
+<form onsubmit=“d()”>
+<br>
+
+<div class="divi">
+
+<label for="full name"><b>Your Full Name:</b></label>
+ <div class="input-container">
+    <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="enter your name" Id="eme">
+ </div>
+
+<br>
+
+
+<label for="section"><b>Your Section:</b></label>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+     <input class="input-field" type="text" placeholder="enter your section" Id="rald">
+</div>
+<br>
+
+<label for="favteacher"><b>Your Favorite Teacher:</b></label>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+     <input class="input-field" type="text" placeholder="enter your favorite teacher" Id="favtea">
+</div>
+<br>
+<label for="favsubject"><b>Your Favorite Subject:</b></label>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+<input class="input-field" type="text" placeholder="enter your favorite subject" Id="favsub">
+</div>
+<br>
+<label for="leastfavsubject"><b>Your Least Favorite Subject:</b></label>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="enter your least favorite subject" Id="leafavsub">
+</div>
+<br>
+<label for="leastfavteacher"><b>Your Least Favorite Teacher:</b></label>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+   <input class="input-field" type="text" placeholder="enter the name of your least favorite teacher" Id="leafavtea">
+</div>
+<br>
+<label for="ONe WORd"><b>One word to describe Ma'am Maribel</b></label>
+<div class="input-container">
+    <i class="fa fa-user icon"></i> 
+     <input class="input-field" type="text" placeholder="enter your one word" Id="bel">
+</div>
+<br>
+
+<label for="ONe WORD"><b>One word to describe Sir Jeffson</b></label>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+     <input class="input-field" type="text" placeholder="enter your one word" Id="son">
+</div>
+<br>
+
+<label for="ONE WORD"><b>One word to describe Sir Jeric</b></label>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="enter your one word" Id="jer">
+</div>
+<br>
+
+<label for="one word"><b>One word to describe Ma'am Chley</b></label>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+     <input class="input-field" type="text" placeholder="enter your one word" Id="che">
+</div>
+
+<br>
+<button>Submit</button>
+
+</div>
+<br><br><br>
+</form>
+<footer>
+   <h2>All rights reserved Emerald Sy. 23-24</h2><h3></h3></footer>
+
+<script>
+function d() {document.getElementById("de").InnerHTML}
+
+function d() {
+    var x = document.getElementById("eme").value;
+    var y = document.getElementById("rald").value;
+    var a = document.getElementById("favtea").value;
+    var b = document.getElementById("favsub").value;
+    var c = document.getElementById("leafavsub").value;
+    var d = document.getElementById("leafavtea").value;
+    var e = document.getElementById("bel").value;
+    var f = document.getElementById("son").value;
+    var g = document.getElementById("jer").value;
+    var h = document.getElementById("che").value;
+
+    localStorage.setItem("name", x);
+    localStorage.setItem("section", y);
+    localStorage.setItem("favorite_teacher", a);
+    localStorage.setItem("favorite_subject", b);
+    localStorage.setItem("least_favorite_subject", c);
+    localStorage.setItem("least_favorite_teacher", d);
+    localStorage.setItem("maam_maribel", e);
+    localStorage.setItem("sir_jeffson", f);
+    localStorage.setItem("sir_jeric", g);
+    localStorage.setItem("maam_chley", h);
+}
+
+</script>
+</body>
+</html>
